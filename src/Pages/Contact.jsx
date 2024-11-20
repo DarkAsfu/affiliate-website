@@ -2,8 +2,8 @@ const Contact = () => {
   
   return (
     <div>
-      <section className="w-11/12 md:w-10/12 mx-auto">
-        <div className="container  py-12 mx-auto">
+      <section className="">
+        <div className=" py-12 mx-auto">
           <div>
             <p className="font-medium text-danger dark:text-blue-400">
               Contact us

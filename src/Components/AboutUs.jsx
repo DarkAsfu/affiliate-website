@@ -2,7 +2,7 @@ import { Button } from '@nextui-org/react';
 
 const AboutUs = () => {
     return (
-        <div className='w-11/12 md:w-10/12 mx-auto'>
+        <div className='my-10'>
             <h1 className='text-white text-4xl font-bold text-center mb-10'>About <span className='text-[#f31260]'>Us</span></h1>
             <section className="overflow-hidden sm:grid sm:grid-cols-2 gap-10">
                 <img

@@ -2,8 +2,8 @@ import signin from '../assets/sign.jpg'
 
 const Login = () => {
     return (
-        <section className="md:flex justify-between items-center gap-10 w-11/12 md:w-10/12 mx-auto" >
-            <div className="w-full px-4 py-12 sm:px-6 sm:py-16 lg:w-1/2 lg:px-8 lg:py-24">
+        <section className="md:flex justify-between items-center gap-10 my-10" >
+            <div className="">
                 <div className="">
                     <h1 className="text-2xl font-bold sm:text-3xl text-white">Get started today!</h1>
 

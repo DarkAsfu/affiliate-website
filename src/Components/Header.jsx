@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link } from "@nextui-org/react";
 import { useLocation } from "react-router-dom"; // Import for tracking the current route
 
@@ -24,7 +24,7 @@ export default function Header() {
 
     return (
         <div>
-            <Navbar maxWidth="xl" className="bg-transparent py-3" onMenuOpenChange={setIsMenuOpen}>
+            <Navbar maxWidth="2xl" className="bg-transparent py-3" onMenuOpenChange={setIsMenuOpen}>
                 <NavbarContent>
                     <NavbarMenuToggle
                         aria-label={isMenuOpen ? "Close menu" : "Open menu"}

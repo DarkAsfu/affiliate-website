@@ -1,8 +1,48 @@
+import { FaChartPie, FaChartLine, FaChartBar, FaSearch, FaCogs, FaCloud } from "react-icons/fa";
 const Features = () => {
+
+    const features = [
+        {
+            title: "Advance Smartlink",
+            description: "Single url for all top offers, our smartlink system redirection base on the country and device OS for best convert.",
+            icon: <FaChartPie className="text-[50px] bg-danger p-2 rounded-full"/>,
+            link: "content-marketing.html"
+        },
+        {
+            title: "High Converting Offers",
+            description: "By hand selected offers for our affiliate makes good profits and happy.",
+            icon: <FaChartLine className="text-[50px] bg-danger p-2 rounded-full"/>,
+            link: "content-marketing.html"
+        },
+        {
+            title: "Real-Time Stats",
+            description: "How much have you earned? We know that! Our tracking system enables affiliates to monitor the traffic flow, transactions and conversion in real time.",
+            icon: <FaChartBar className="text-[50px] bg-danger p-2 rounded-full"/>,
+            link: "content-marketing.html"
+        },
+        {
+            title: "Smart Tracking Platform",
+            description: "Easy-to-use custom tracking platform specially created to suit the needs of an our partners.",
+            icon: <FaSearch className="text-[50px] bg-danger p-2 rounded-full"/>,
+            link: "content-marketing.html"
+        },
+        {
+            title: "Weekly Payments",
+            description: "Flexible terms: Weekly / Biweekly / Monthly.",
+            icon: <FaCogs className="text-[50px] bg-danger p-2 rounded-full"/>,
+            link: "content-marketing.html"
+        },
+        {
+            title: "24/7 Technical Support",
+            description: "Our team cares about given service quality and for sure about your traffic so there is no any reason to worry about it.",
+            icon: <FaCloud className="text-[50px] bg-danger p-2 rounded-full"/>,
+            link: "content-marketing.html"
+        }
+    ];
     return (
         <div>
             <section className="text-white">
-                <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+                <div className="">
                     <div className="mx-auto max-w-lg text-center">
                         <h2 className="text-3xl font-bold sm:text-4xl">Features</h2>
 
@@ -12,191 +52,20 @@ const Features = () => {
                     </div>
 
                     <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-                        <a
-                            className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
-                            href="#"
-                        >
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="size-10 text-pink-500"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
+                        {
+                            features.map((f, idx) => <a key={idx}
+                                className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
+                                href="#"
                             >
-                                <path d="M12 14l9-5-9-5-9 5 9 5z" />
-                                <path
-                                    d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-                                />
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-                                />
-                            </svg>
-
-                            <h2 className="mt-4 text-xl font-bold text-white">Digital campaigns</h2>
-
-                            <p className="mt-1 text-sm text-gray-300">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
-                                distinctio alias voluptatum blanditiis laudantium.
-                            </p>
-                        </a>
-
-                        <a
-                            className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
-                            href="#"
-                        >
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="size-10 text-pink-500"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                            >
-                                <path d="M12 14l9-5-9-5-9 5 9 5z" />
-                                <path
-                                    d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-                                />
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-                                />
-                            </svg>
-
-                            <h2 className="mt-4 text-xl font-bold text-white">Digital campaigns</h2>
-
-                            <p className="mt-1 text-sm text-gray-300">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
-                                distinctio alias voluptatum blanditiis laudantium.
-                            </p>
-                        </a>
-
-                        <a
-                            className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
-                            href="#"
-                        >
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="size-10 text-pink-500"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                            >
-                                <path d="M12 14l9-5-9-5-9 5 9 5z" />
-                                <path
-                                    d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-                                />
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-                                />
-                            </svg>
-
-                            <h2 className="mt-4 text-xl font-bold text-white">Digital campaigns</h2>
-
-                            <p className="mt-1 text-sm text-gray-300">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
-                                distinctio alias voluptatum blanditiis laudantium.
-                            </p>
-                        </a>
-
-                        <a
-                            className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
-                            href="#"
-                        >
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="size-10 text-pink-500"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                            >
-                                <path d="M12 14l9-5-9-5-9 5 9 5z" />
-                                <path
-                                    d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-                                />
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-                                />
-                            </svg>
-
-                            <h2 className="mt-4 text-xl font-bold text-white">Digital campaigns</h2>
-
-                            <p className="mt-1 text-sm text-gray-300">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
-                                distinctio alias voluptatum blanditiis laudantium.
-                            </p>
-                        </a>
-
-                        <a
-                            className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
-                            href="#"
-                        >
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="size-10 text-pink-500"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                            >
-                                <path d="M12 14l9-5-9-5-9 5 9 5z" />
-                                <path
-                                    d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-                                />
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-                                />
-                            </svg>
-
-                            <h2 className="mt-4 text-xl font-bold text-white">Digital campaigns</h2>
-
-                            <p className="mt-1 text-sm text-gray-300">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
-                                distinctio alias voluptatum blanditiis laudantium.
-                            </p>
-                        </a>
-
-                        <a
-                            className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
-                            href="#"
-                        >
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="size-10 text-pink-500"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                            >
-                                <path d="M12 14l9-5-9-5-9 5 9 5z" />
-                                <path
-                                    d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-                                />
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-                                />
-                            </svg>
-
-                            <h2 className="mt-4 text-xl font-bold text-white">Digital campaigns</h2>
-
-                            <p className="mt-1 text-sm text-gray-300">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
-                                distinctio alias voluptatum blanditiis laudantium.
-                            </p>
-                        </a>
+                                {f.icon}
+    
+                                <h2 className="mt-4 text-xl font-bold text-white">{f.title}</h2>
+    
+                                <p className="mt-1 text-sm text-gray-300">
+                                    {f.description}
+                                </p>
+                            </a>)
+                        }
                     </div>
 
                     <div className="mt-12 text-center">
